@@ -143,6 +143,16 @@ footer{padding-bottom:88px}
 @media(max-width:500px){.quick-contact{right:14px;font-size:13px;padding:12px 16px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+
+.hero-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.hero-link{display:inline-flex;align-items:center;gap:9px;padding:11px 14px;border-radius:8px;font-size:12px;font-weight:800;border:1px solid rgba(255,255,255,.12);background:#17171a;color:#fff;transition:.2s ease}
+.hero-link:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.24)}
+.hero-link .mini-icon{width:24px;height:24px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 24px;font-weight:900}
+.hero-link.max-group .mini-icon{background:linear-gradient(135deg,#4c1dff,#9b00ff 52%,#00bfff);font-size:9px;color:#fff}
+.hero-link.gis{border-color:rgba(102,196,61,.3)}
+.hero-link.gis .mini-icon{background:#65c33d;color:#fff;font-size:8px}
+@media(max-width:620px){.hero-links{display:grid;grid-template-columns:1fr}.hero-link{justify-content:center}}
+
 </style>
 <script type="application/ld+json">
 {
@@ -340,6 +350,14 @@ footer{padding-bottom:88px}
       <h1>Заточка<br>в <span>Сургуте.</span></h1>
       <p class="intro">Профессиональная заточка в Сургуте.<br>От деликатных кусачек до любимого ножа —<br>вернём инструменту чистый срез.</p>
       <a class="primary" href="#services">Подобрать заточку <b>↗</b></a>
+      <div class="hero-links">
+        <a class="hero-link max-group" href="https://max.ru/join/fW7oA0JYuDp4XhMFCNU96ijwkn6Xn27f8KONwa0nMek" target="_blank" rel="noopener">
+          <span class="mini-icon">MAX</span><span>Вступить в канал MAX</span>
+        </a>
+        <a class="hero-link gis" href="https://2gis.ru/surgut/geo/70000001030408396" target="_blank" rel="noopener">
+          <span class="mini-icon">2ГИС</span><span>Отзывы и маршрут в 2ГИС</span>
+        </a>
+      </div>
       <p class="micro"><i></i>Ваш инструмент. Наше мастерство.</p>
     </section>
 
