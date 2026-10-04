@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Заточка в Сургуте — ножи, ножницы, кусачки | Студия «Алмаз»</title>
-<meta name="description" content="Заточка ножей, ножниц, кусачек и ножевых блоков в Сургуте. Студия «Алмаз», мастер Максим Максимов. Кусачки — 450 ₽, ножницы — от 350 ₽, ножи — от 200 ₽. Запись и цены.">
+<meta name="description" content="Заточка ножей, ножниц, кусачек и ножевых блоков в Сургуте, ХМАО — Югра. Студия «Алмаз», мастер Максим Максимов. Кусачки — 450 ₽, ножницы — от 350 ₽, ножи — от 200 ₽. Запись и цены.">
 <meta name="theme-color" content="#111113">
 <link rel="canonical" href="https://almaz-surgut.ru/">
 <meta name="robots" content="index,follow,max-image-preview:large">
@@ -163,7 +163,15 @@ footer{padding-bottom:88px}
   },
   "areaServed": {
     "@type": "City",
-    "name": "Сургут"
+    "name": "Сургут",
+    "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "Ханты-Мансийский автономный округ — Югра",
+      "containedInPlace": {
+        "@type": "AdministrativeArea",
+        "name": "Тюменская область"
+      }
+    }
   },
   "sameAs": [
     "https://t.me/ZatochkaSurgut"
@@ -314,6 +322,7 @@ footer{padding-bottom:88px}
 </script>
 </head>
 <body>
+<noscript><div><img src="https://mc.yandex.ru/watch/113395871" style="position:absolute;left:-9999px;" alt=""></div></noscript>
 <header class="hero" id="top">
   <nav class="nav shell">
     <a class="wordmark" href="#top"><b>АЛМАЗ</b><span>СТУДИЯ ЗАТОЧКИ</span></a>
@@ -409,10 +418,10 @@ footer{padding-bottom:88px}
       <h2>Свяжитесь с мастером</h2>
       <p>MAX и Telegram — основные способы связи. WhatsApp оставлен дополнительным.</p>
       <a class="phone" href="tel:+79028549859">+7 902 854-98-59</a>
-      <p>Максим Максимов · Сургут</p>
+      <p>Максим Максимов · Сургут<br>Ханты-Мансийский автономный округ — Югра<br>Тюменская область</p>
     </div>
     <form id="requestForm" class="request-form">
-      <label>Ваше имя<input name="name" type="text" placeholder="Например, Анна"></label>
+      <label>Ваше имя<input class="ym-disable-keys" name="name" type="text" placeholder="Например, Анна"></label>
       <label>Инструмент<select name="service">
         <option>Кусачки кутикульные</option><option>Кусачки подологические</option>
         <option>Маникюрные ножницы</option><option>Парикмахерские ножницы</option>
@@ -420,7 +429,7 @@ footer{padding-bottom:88px}
         <option>Кухонный нож</option><option>Складной / охотничий нож</option>
         <option>Топор</option><option>Ремонт маникюрного аппарата</option><option>Другое</option>
       </select></label>
-      <label>Комментарий<textarea name="comment" rows="4" placeholder="Количество, состояние инструмента"></textarea></label>
+      <label>Комментарий<textarea class="ym-disable-keys" name="comment" rows="4" placeholder="Количество, состояние инструмента"></textarea></label>
       <div class="submit-actions">
         <button type="button" id="sendMax" class="primary msg-button"><span class="msg-icon msg-max" aria-hidden="true">MAX</span><span>Написать в MAX</span></button>
         <button type="submit" class="secondary msg-button"><span class="msg-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#229ED9"/><path fill="#fff" d="M18.7 6.2 16.5 17c-.2.8-.7 1-1.4.6l-3.4-2.5-1.6 1.6c-.2.2-.3.3-.7.3l.2-3.5 6.4-5.8c.3-.2-.1-.4-.4-.2l-7.9 5-3.4-1.1c-.7-.2-.8-.7.2-1.1l13.3-5.1c.6-.2 1.2.1.9 1z"/></svg></span><span>Telegram</span></button>
