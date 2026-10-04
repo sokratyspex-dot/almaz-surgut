@@ -1,1 +1,271 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Студия заточки «Алмаз» — Сургут</title>
+<meta name="description" content="Профессиональная заточка маникюрного, парикмахерского, грумерского инструмента, ножей и топоров в Сургуте. Максим Максимов.">
+<meta name="theme-color" content="#111113">
+<style>
+:root{--bg:#111113;--bg2:#151517;--paper:#f2efe9;--ink:#171719;--muted:#929297;--red:#ff4747;--line:rgba(255,255,255,.09);--max:1260px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:#f5f5f5;line-height:1.45}
+a{color:inherit;text-decoration:none}
+.shell{width:min(calc(100% - 80px),var(--max));margin:auto}
+.hero{min-height:790px;background:var(--bg)}
+.nav{height:92px;display:flex;align-items:center;border-bottom:1px solid var(--line)}
+.wordmark{display:flex;flex-direction:column;line-height:1}
+.wordmark b{font-size:22px;letter-spacing:.23em}
+.wordmark span{font-size:7px;letter-spacing:.31em;color:#aaa;margin-top:7px}
+.navlinks{margin-left:auto;display:flex;align-items:center;gap:34px;font-size:12px;color:#999}
+.city{display:flex;align-items:center;gap:8px}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--red);display:inline-block}
+.order-pill{border:1px solid rgba(255,255,255,.11);padding:12px 14px;border-radius:5px;color:#ddd}
+.order-pill em{font-style:normal;background:#1c1c1e;padding:4px 8px;margin-left:11px}
+.hero-main{display:grid;grid-template-columns:.86fr 1.14fr;min-height:570px;align-items:center;gap:40px}
+.hero-copy{padding:54px 0 30px}
+.kicker{font-size:10px;letter-spacing:.28em;font-weight:750;color:#999;display:flex;align-items:center;gap:12px}
+h1{font-weight:390;font-size:clamp(56px,6.2vw,88px);line-height:.92;letter-spacing:-.055em;margin:28px 0 26px}
+h1 span,.dark-section h2 span{color:var(--red)}
+.intro{color:#939399;font-size:16px;line-height:1.65}
+.primary{display:inline-flex;align-items:center;justify-content:space-between;gap:60px;background:var(--red);border:0;color:#fff;font-weight:750;padding:18px 20px;border-radius:3px;margin-top:26px;min-width:210px;cursor:pointer}
+.primary b{font-size:25px;font-weight:300}
+.micro{font-size:9px;color:#65656a;margin-top:26px;display:flex;align-items:center;gap:12px}
+.micro i{width:20px;border-top:1px solid rgba(255,71,71,.55)}
+.hero-art{position:relative;min-height:530px;display:flex;align-items:center;justify-content:center}
+.art-label{position:absolute;top:55px;left:16%;font-size:8px;letter-spacing:.28em;color:#525258}
+.orbit{position:absolute;border:1px solid rgba(255,255,255,.025);border-radius:50%;width:520px;height:280px;transform:rotate(-15deg)}
+.orbit.b{transform:rotate(16deg);width:590px;height:320px}
+.logo-main{position:relative;width:min(100%,670px);max-height:455px;object-fit:contain;z-index:2;filter:drop-shadow(0 28px 42px rgba(0,0,0,.45))}
+.hero-foot{height:54px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;color:#55555b;font-size:8px;letter-spacing:.18em}
+.services{background:#070708;color:#f5f5f5;padding:78px 0 100px}
+.light-shell{width:min(calc(100% - 160px),1080px);margin:auto}
+.section-top{display:grid;grid-template-columns:1fr 320px;gap:40px;align-items:end}
+.section-index{font-size:10px;letter-spacing:.26em;color:#ff3b3f;font-weight:700}
+.section-top h2,.contact h2{font-size:46px;line-height:1;margin:15px 0 0;letter-spacing:-.045em;font-weight:450}.services .section-top h2{color:#fff}
+.section-top>p{color:#8e8e93;font-size:13px}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px;border-bottom:0}
+.filter{background:#101113;border:1px solid #2a2b2e;border-radius:999px;padding:10px 16px;color:#b9b9bd;cursor:pointer;font-size:14px}
+.filter span{display:inline;font-size:12px;margin-top:0}
+.filter.active{color:#fff;border-color:#e3262e;background:#171719;box-shadow:inset 0 0 0 1px rgba(227,38,46,.15)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;background:transparent;margin-top:22px;border:0}
+.service-card{background:linear-gradient(180deg,#151516 0%,#101011 100%);padding:24px 20px;min-height:204px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid #292a2d;border-radius:16px;color:#f5f5f5}
+.service-card.hidden{display:none}
+.service-card small{font-size:8px;letter-spacing:.18em;color:#ff3038}
+.service-card h3{font-size:18px;line-height:1.2;margin:15px 0 9px;color:#f5f5f5}
+.service-card p{font-size:13px;color:#9b9ba0;margin:0}
+.service-card>b{font-size:24px;color:#fff}
+.dark-section{background:#101012;padding:96px 0}
+.care-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:100px}
+.dark-section h2{font-size:58px;line-height:.95;font-weight:400;letter-spacing:-.05em;margin:24px 0}
+.care-list{border-top:1px solid var(--line)}
+.care-list article{display:grid;grid-template-columns:50px 1fr;gap:20px;padding:25px 0;border-bottom:1px solid var(--line)}
+.care-list article>b{color:var(--red);font-size:11px}
+.care-list h3{margin:0 0 8px;font-size:20px}
+.care-list p{margin:0;color:#898990}
+.contact{background:var(--paper);color:var(--ink);padding:90px 0}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px}
+.contact-grid>div>p{color:#8a8782}
+.phone{display:block;font-size:28px;font-weight:750;margin-top:25px}
+.request-form{display:grid;gap:14px}
+.request-form label{font-size:11px;font-weight:700;color:#77736d}
+.request-form input,.request-form select,.request-form textarea{width:100%;margin-top:7px;border:1px solid #d3cec5;background:#fff;color:#222;padding:13px;font:inherit}
+.submit-actions{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:9px}
+.submit-actions .primary{margin:0;min-width:0;gap:0}
+.secondary{border:1px solid #c8c2b9;background:transparent;color:#333;font-weight:700;cursor:pointer}
+.note{font-size:11px;color:#aaa!important}
+footer{background:#0d0d0f;border-top:1px solid var(--line);padding:26px 0;color:#68686d;font-size:9px;letter-spacing:.15em}
+footer .shell{display:flex;justify-content:space-between}
+@media(max-width:980px){
+.shell{width:min(calc(100% - 32px),var(--max))}
+.light-shell{width:min(calc(100% - 40px),1080px)}
+.navlinks a:not(.order-pill),.city{display:none}
+.hero-main{grid-template-columns:1fr}
+.hero-copy{padding-top:65px}
+.hero-art{min-height:390px}
+.logo-main{width:min(94%,620px)}
+.hero{min-height:auto}
+.section-top{grid-template-columns:1fr}
+.filters{display:flex;grid-template-columns:none}
+.cards{grid-template-columns:repeat(2,1fr)}
+.care-grid,.contact-grid{grid-template-columns:1fr;gap:45px}
+}
+@media(max-width:620px){
+.nav{height:74px}
+.wordmark b{font-size:18px}
+.order-pill{padding:9px}
+h1{font-size:55px}
+.hero-main{gap:0}
+.hero-art{min-height:310px}
+.logo-main{width:100%;max-height:300px}
+.art-label,.orbit{display:none}
+.hero-foot{font-size:6px}
+.services{padding-top:58px}
+.light-shell{width:min(calc(100% - 28px),1080px)}
+.section-top h2,.contact h2{font-size:38px}
+.filters{display:flex;grid-template-columns:none}
+.cards{grid-template-columns:1fr}
+.dark-section h2{font-size:48px}
+.submit-actions{grid-template-columns:1fr}
+.primary{width:100%}
+footer .shell{flex-direction:column;gap:10px}
+}
 
+/* Messenger icons — only this block was added */
+.msg-button{display:flex!important;align-items:center;justify-content:center;gap:10px}
+.msg-icon{width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 24px}
+.msg-icon svg{display:block;width:24px;height:24px}
+.msg-max{border-radius:7px;background:linear-gradient(135deg,#471AFF 0%,#9500FF 52%,#00BFFF 100%);color:#fff;font-size:9px;font-weight:900;letter-spacing:-.05em;line-height:1}
+
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <nav class="nav shell">
+    <a class="wordmark" href="#top"><b>АЛМАЗ</b><span>СТУДИЯ ЗАТОЧКИ</span></a>
+    <div class="navlinks">
+      <a href="#services">Услуги и цены</a>
+      <a href="#care">Уход за инструментом</a>
+      <span class="city"><i class="dot"></i>Сургут</span>
+      <a class="order-pill" href="#contact">Моя заявка <em>0</em></a>
+    </div>
+  </nav>
+
+  <div class="hero-main shell">
+    <section class="hero-copy">
+      <p class="kicker"><i class="dot"></i>МАСТЕР МАКСИМ МАКСИМОВ</p>
+      <h1>Точность<br>в каждой <span>грани.</span></h1>
+      <p class="intro">Профессиональная заточка в Сургуте.<br>От деликатных кусачек до любимого ножа —<br>вернём инструменту чистый срез.</p>
+      <a class="primary" href="#services">Подобрать заточку <b>↗</b></a>
+      <p class="micro"><i></i>Ваш инструмент. Наше мастерство.</p>
+    </section>
+
+    <section class="hero-art">
+      <p class="art-label">01 / ИСКУССТВО ТОЧНОСТИ</p>
+      <div class="orbit"></div><div class="orbit b"></div>
+      <img class="logo-main" alt="Заточка Алмаз — Максим Максимов"
+        src="almaz-logo.png">
+    </section>
+  </div>
+
+  <div class="hero-foot shell">
+    <span>ЗАТОЧКА · РЕСТАВРАЦИЯ · РЕМОНТ</span><span>Листайте ниже ↓</span>
+  </div>
+</header>
+
+<main>
+<section class="services" id="services">
+  <div class="light-shell">
+    <div class="section-top">
+      <div><p class="section-index">01 / УСЛУГИ И ЦЕНЫ</p><h2>Что будем точить?</h2></div>
+      <p>Выберите категорию и инструмент.<br>Стоимость и детали — сразу перед вами.</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-filter="manicure">✂<span>Маникюрный</span></button>
+      <button class="filter" data-filter="hair">✂<span>Парикмахерский</span></button>
+      <button class="filter" data-filter="groom">◌<span>Грумерский</span></button>
+      <button class="filter" data-filter="knives">◢<span>Ножи и топоры</span></button>
+      <button class="filter" data-filter="repair">⚙<span>Ремонт</span></button>
+      <button class="filter" data-filter="all">＋<span>Все услуги</span></button>
+    </div>
+
+    <div class="cards">
+      <article class="service-card" data-cat="manicure"><div><small>МАНИКЮР И ПЕДИКЮР</small><h3>Кусачки кутикульные</h3><p>Деликатная заточка режущих кромок и настройка.</p></div><b>450 ₽</b></article>
+      <article class="service-card" data-cat="manicure"><div><small>МАНИКЮР И ПЕДИКЮР</small><h3>Кусачки подологические</h3><p>Для работы с вросшим ногтем.</p></div><b>550 ₽</b></article>
+      <article class="service-card" data-cat="manicure"><div><small>МАНИКЮР И ПЕДИКЮР</small><h3>Ножницы маникюрные / ногтевые</h3><p>Заточка и проверка среза.</p></div><b>350 ₽</b></article>
+      <article class="service-card" data-cat="hair"><div><small>ПАРИКМАХЕРСКИЙ</small><h3>Парикмахерские ножницы</h3><p>Прямые и филировочные.</p></div><b>700 ₽</b></article>
+      <article class="service-card" data-cat="groom"><div><small>ГРУМЕРСКИЙ</small><h3>Грумерские ножницы</h3><p>Прямые, изогнутые и филировочные.</p></div><b>700 ₽</b></article>
+      <article class="service-card" data-cat="hair groom"><div><small>МАШИНКИ</small><h3>Ножевые блоки</h3><p>Парикмахерские и грумерские машинки.</p></div><b>700 ₽</b></article>
+      <article class="service-card" data-cat="knives"><div><small>НОЖИ</small><h3>Кухонные ножи</h3><p>Стоимость зависит от размера и состояния.</p></div><b>от 200 ₽</b></article>
+      <article class="service-card" data-cat="knives"><div><small>НОЖИ</small><h3>Складные / охотничьи</h3><p>Ручная заточка.</p></div><b>700 ₽</b></article>
+      <article class="service-card" data-cat="knives"><div><small>ТОПОРЫ</small><h3>Топоры</h3><p>Восстановление режущей кромки.</p></div><b>700 ₽</b></article>
+      <article class="service-card" data-cat="repair hair groom"><div><small>РЕСТАВРАЦИЯ</small><h3>Реставрация ножниц</h3><p>Парикмахерские и грумерские.</p></div><b>1 500 ₽</b></article>
+      <article class="service-card" data-cat="repair"><div><small>STRONG / MARATHON</small><h3>Подшипники в сборе</h3><p>Замена подшипников.</p></div><b>2 200 ₽</b></article>
+      <article class="service-card" data-cat="repair"><div><small>STRONG / MARATHON</small><h3>Один подшипник / чистка</h3><p>Замена одного подшипника или чистка/разбор.</p></div><b>600 ₽</b></article>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section" id="care">
+  <div class="shell care-grid">
+    <div><p class="kicker"><i class="dot"></i>02 / ПОСЛЕ ЗАТОЧКИ</p><h2>Острота любит<br><span>заботу.</span></h2><p class="intro">Простые привычки помогают дольше сохранить результат.</p></div>
+    <div class="care-list">
+      <article><b>01</b><div><h3>Маникюрный инструмент</h3><p>Не раскрывайте кусачки до упора, не роняйте и соблюдайте режим обработки.</p></div></article>
+      <article><b>02</b><div><h3>Ножи</h3><p>Не используйте стеклянные доски, не мойте в посудомойке и вытирайте насухо.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="light-shell contact-grid">
+    <div>
+      <p class="section-index">03 / ЗАПИСЬ</p>
+      <h2>Свяжитесь с мастером</h2>
+      <p>MAX и Telegram — основные способы связи. WhatsApp оставлен дополнительным.</p>
+      <a class="phone" href="tel:+79028549859">+7 902 854-98-59</a>
+      <p>Максим Максимов · Сургут</p>
+    </div>
+    <form id="requestForm" class="request-form">
+      <label>Ваше имя<input name="name" type="text" placeholder="Например, Анна"></label>
+      <label>Инструмент<select name="service">
+        <option>Кусачки кутикульные</option><option>Кусачки подологические</option>
+        <option>Маникюрные ножницы</option><option>Парикмахерские ножницы</option>
+        <option>Грумерские ножницы</option><option>Ножевой блок машинки</option>
+        <option>Кухонный нож</option><option>Складной / охотничий нож</option>
+        <option>Топор</option><option>Ремонт маникюрного аппарата</option><option>Другое</option>
+      </select></label>
+      <label>Комментарий<textarea name="comment" rows="4" placeholder="Количество, состояние инструмента"></textarea></label>
+      <div class="submit-actions">
+        <button type="button" id="sendMax" class="primary msg-button"><span class="msg-icon msg-max" aria-hidden="true">MAX</span><span>Написать в MAX</span></button>
+        <button type="submit" class="secondary msg-button"><span class="msg-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#229ED9"/><path fill="#fff" d="M18.7 6.2 16.5 17c-.2.8-.7 1-1.4.6l-3.4-2.5-1.6 1.6c-.2.2-.3.3-.7.3l.2-3.5 6.4-5.8c.3-.2-.1-.4-.4-.2l-7.9 5-3.4-1.1c-.7-.2-.8-.7.2-1.1l13.3-5.1c.6-.2 1.2.1.9 1z"/></svg></span><span>Telegram</span></button>
+        <button type="button" id="sendWhatsApp" class="secondary msg-button"><span class="msg-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#25D366"/><path fill="#fff" d="M17.5 6.5A7.8 7.8 0 0 0 5.2 15.9L4 20l4.2-1.1a7.8 7.8 0 0 0 9.3-12.4ZM12 18.4c-1.2 0-2.4-.3-3.4-.9l-.2-.1-2.5.7.7-2.4-.2-.2A6.3 6.3 0 1 1 12 18.4Zm3.5-4.7c-.2-.1-1.1-.6-1.3-.6-.2-.1-.3-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1-.2-.1-.8-.3-1.6-.9-.6-.5-1-1.1-1.1-1.3-.1-.2 0-.3.1-.4l.4-.4c.1-.1.2-.2.2-.3.1-.1 0-.3 0-.4-.1-.1-.4-1.1-.6-1.5-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.7.7-.7 1.8s.8 2.1.9 2.3c.1.2 1.7 2.5 4 3.5.6.2 1 .4 1.4.5.6.2 1.1.1 1.5.1.5-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.3-.2-.7-.3Z"/></svg></span><span>WhatsApp</span></button>
+      </div>
+      <p id="formNote" class="note">Для MAX текст заявки копируется автоматически.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="shell"><span>АЛМАЗ · СТУДИЯ ЗАТОЧКИ · СУРГУТ</span><span>© <span id="year"></span> Максим Максимов</span></div></footer>
+
+<script>
+document.querySelectorAll('.filter').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));
+    btn.classList.add('active');
+    const f=btn.dataset.filter;
+    document.querySelectorAll('.service-card').forEach(card=>{
+      const cats=(card.dataset.cat||'').split(' ');
+      card.classList.toggle('hidden',f!=='all'&&!cats.includes(f));
+    });
+  });
+});
+
+const form=document.getElementById('requestForm');
+const note=document.getElementById('formNote');
+function textReq(){
+  const d=new FormData(form);
+  return [
+    'Здравствуйте! Хочу записаться в Студию заточки «Алмаз».',
+    d.get('name') ? 'Имя: '+d.get('name') : '',
+    'Инструмент: '+d.get('service'),
+    d.get('comment') ? 'Комментарий: '+d.get('comment') : ''
+  ].filter(Boolean).join('\n');
+}
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  window.open('https://t.me/ZatochkaSurgut?text='+encodeURIComponent(textReq()),'_blank','noopener');
+});
+document.getElementById('sendWhatsApp').addEventListener('click',()=>{
+  window.open('https://wa.me/79028549859?text='+encodeURIComponent(textReq()),'_blank','noopener');
+});
+document.getElementById('sendMax').addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(textReq());note.textContent='Текст заявки скопирован. Вставьте его в MAX.';}catch(e){}
+  window.open('https://max.ru/u/f9LHodD0cOL3pQyr5XkDK6MVtNHawLKkdbONwLSyoOXOts-p8-sgm9h1b4g','_blank','noopener');
+});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
