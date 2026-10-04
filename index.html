@@ -2,145 +2,104 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Студия заточки «Алмаз» — заточка в Сургуте</title>
-  <meta name="description" content="Профессиональная заточка маникюрного, парикмахерского, грумерского инструмента, ножей и ножевых блоков машинок в Сургуте. Мастер Максим Максимов." />
-  <meta name="theme-color" content="#090909" />
-  <meta property="og:title" content="Студия заточки «Алмаз» — Сургут" />
-  <meta property="og:description" content="Профессиональная заточка инструмента. Выберите категорию, посмотрите цену и отправьте заявку мастеру." />
-  <meta property="og:type" content="website" />
+  <meta name="description" content="Профессиональная заточка маникюрного, парикмахерского, грумерского инструмента, ножей, ножевых блоков и топоров в Сургуте. Максим Максимов." />
+  <meta name="theme-color" content="#111113" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preload" href="almaz-logo.png" as="image" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20261004-2" />
 </head>
 <body>
-  <header class="hero" id="top">
-    <nav class="nav wrap" aria-label="Главная навигация">
-      <a class="brand" href="#top" aria-label="Студия заточки Алмаз">
-        <span class="brand-mark" aria-hidden="true">◆</span>
-        <span><b>АЛМАЗ</b><small>студия заточки</small></span>
-      </a>
-      <div class="nav-links">
-        <a href="#services">Услуги</a>
-        <a href="#care">Уход</a>
-        <a href="#contact">Запись</a>
-      </div>
-      <a class="btn btn-small" href="tel:+79028549859">Позвонить</a>
-    </nav>
-
-    <div class="hero-grid wrap">
-      <div class="hero-copy">
-        <p class="eyebrow">ЗАТОЧКА В СУРГУТЕ</p>
-        <h1>Инструмент должен <span>резать идеально.</span></h1>
-        <p class="lead">Студия заточки «Алмаз». Маникюрный, парикмахерский, грумерский инструмент, ножевые блоки, ножи и топоры.</p>
-        <div class="hero-actions">
-          <a class="btn" href="#services">Посмотреть цены</a>
-          <a class="btn btn-ghost" href="#contact">Записаться</a>
-        </div>
-        <div class="facts" aria-label="Преимущества">
-          <div><strong>Профессионально</strong><span>точная настройка инструмента</span></div>
-          <div><strong>Сургут</strong><span>приём и выдача инструмента</span></div>
-          <div><strong>Максим Максимов</strong><span>мастер по заточке</span></div>
-        </div>
-      </div>
-
-      <div class="diamond-stage">
-        <div class="glow"></div>
-        <img class="hero-logo" src="almaz-logo.png" alt="Заточка Алмаз — Максим Максимов" width="900" height="900" />
-      </div>
+<header class="hero" id="top">
+  <nav class="nav shell">
+    <a class="wordmark" href="#top"><b>АЛМАЗ</b><span>СТУДИЯ ЗАТОЧКИ</span></a>
+    <div class="navlinks">
+      <a href="#services">Услуги и цены</a>
+      <a href="#care">Уход за инструментом</a>
+      <span class="city"><i></i>Сургут</span>
+      <a class="order-pill" href="#contact">Моя заявка <em>0</em></a>
     </div>
-  </header>
+  </nav>
 
-  <main>
-    <section class="section" id="services">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">УСЛУГИ И ЦЕНЫ</p>
-          <h2>Выберите инструмент</h2>
-          <p>Нажмите на категорию — покажем только подходящие услуги.</p>
-        </div>
-
-        <div class="filters" role="tablist" aria-label="Категории услуг">
-          <button class="filter active" data-filter="all" role="tab" aria-selected="true">Все</button>
-          <button class="filter" data-filter="manicure" role="tab">Маникюр</button>
-          <button class="filter" data-filter="hair" role="tab">Парикмахер</button>
-          <button class="filter" data-filter="groom" role="tab">Груминг</button>
-          <button class="filter" data-filter="knives" role="tab">Ножи</button>
-          <button class="filter" data-filter="repair" role="tab">Ремонт</button>
-        </div>
-
-        <div class="cards" id="serviceCards">
-          <article class="service-card" data-cat="manicure"><div class="icon">✦</div><h3>Кусачки кутикульные</h3><p>Заточка и настройка хода.</p><div class="price">450 ₽</div></article>
-          <article class="service-card" data-cat="manicure"><div class="icon">✦</div><h3>Кусачки подологические</h3><p>Инструмент для работы с вросшим ногтем.</p><div class="price">550 ₽</div></article>
-          <article class="service-card" data-cat="manicure"><div class="icon">✂</div><h3>Ножницы маникюрные / кутикульные</h3><p>Точная заточка режущей пары.</p><div class="price">350 ₽</div></article>
-          <article class="service-card" data-cat="manicure"><div class="icon">✂</div><h3>Ножницы ногтевые</h3><p>Восстановление уверенного чистого реза.</p><div class="price">350 ₽</div></article>
-          <article class="service-card" data-cat="hair"><div class="icon">✂</div><h3>Парикмахерские ножницы</h3><p>Прямые и филировочные.</p><div class="price">700 ₽</div></article>
-          <article class="service-card" data-cat="groom"><div class="icon">✂</div><h3>Грумерские ножницы</h3><p>Прямые, изогнутые и филировочные.</p><div class="price">700 ₽</div></article>
-          <article class="service-card" data-cat="hair groom"><div class="icon">▰</div><h3>Ножевые блоки машинок</h3><p>Парикмахерские и грумерские машинки.</p><div class="price">700 ₽</div></article>
-          <article class="service-card" data-cat="knives"><div class="icon">◢</div><h3>Кухонные ножи</h3><p>Цена зависит от длины и состояния клинка.</p><div class="price">от 200 ₽</div></article>
-          <article class="service-card" data-cat="knives"><div class="icon">◢</div><h3>Складные / охотничьи ножи</h3><p>Ручная заточка.</p><div class="price">700 ₽</div></article>
-          <article class="service-card" data-cat="knives"><div class="icon">⬖</div><h3>Топоры</h3><p>Восстановление режущей кромки.</p><div class="price">700 ₽</div></article>
-          <article class="service-card" data-cat="repair hair groom"><div class="icon">↻</div><h3>Реставрация ножниц</h3><p>Парикмахерские и грумерские ножницы.</p><div class="price">1 500 ₽</div></article>
-          <article class="service-card" data-cat="repair"><div class="icon">⚙</div><h3>Подшипники Strong / Marathon</h3><p>Замена подшипников в сборе.</p><div class="price">2 200 ₽</div></article>
-          <article class="service-card" data-cat="repair"><div class="icon">⚙</div><h3>Один подшипник</h3><p>Замена одного подшипника.</p><div class="price">600 ₽</div></article>
-          <article class="service-card" data-cat="repair"><div class="icon">⚙</div><h3>Чистка / разбор аппарата</h3><p>Обслуживание маникюрного аппарата.</p><div class="price">600 ₽</div></article>
-        </div>
-      </div>
+  <div class="hero-main shell">
+    <section class="hero-copy">
+      <p class="kicker"><i></i>МАСТЕР МАКСИМ МАКСИМОВ</p>
+      <h1>Точность<br>в каждой <span>грани.</span></h1>
+      <p class="intro">Профессиональная заточка в Сургуте.<br>От деликатных кусачек до любимого ножа —<br>вернём инструменту чистый срез.</p>
+      <a class="primary" href="#services">Подобрать заточку <b>↗</b></a>
+      <p class="micro"><i></i>Ваш инструмент. Наше мастерство.</p>
     </section>
 
-    <section class="section alt" id="care">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">ПОСЛЕ ЗАТОЧКИ</p>
-          <h2>Как сохранить остроту дольше</h2>
-        </div>
-        <div class="care-grid">
-          <article class="care-card"><h3>Маникюрный инструмент</h3><ul><li>Не раскрывайте кусачки до конца без необходимости — можно сбить настройку.</li><li>Не передерживайте инструмент в растворах и при обработке.</li><li>Не роняйте инструмент и храните режущие кромки защищёнными.</li><li>Если заметили недочёт после заточки — свяжитесь с мастером.</li></ul></article>
-          <article class="care-card"><h3>Ножи</h3><ul><li>Не храните ножи вперемешку с вилками и ложками.</li><li>Не мойте в посудомоечной машине.</li><li>Мойте под проточной водой и вытирайте насухо.</li><li>Используйте деревянные или пластиковые доски, не стекло.</li><li>Не бейте режущей кромкой по костям и твёрдым предметам.</li></ul></article>
-        </div>
-      </div>
+    <section class="hero-art" aria-label="Фирменный логотип Студии заточки Алмаз">
+      <p class="art-label">01 / ИСКУССТВО ТОЧНОСТИ</p>
+      <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+      <img src="almaz-logo.png" class="logo-main" alt="Заточка Алмаз — Максим Максимов" />
     </section>
+  </div>
 
-    <section class="section contact-section" id="contact">
-      <div class="wrap contact-grid">
-        <div>
-          <p class="eyebrow">ЗАПИСЬ</p>
-          <h2>Отправьте заявку мастеру</h2>
-          <p class="contact-copy">Заполните форму и выберите удобный мессенджер. Telegram откроется с готовым текстом заявки, MAX — сразу на странице мастера, а WhatsApp останется запасным вариантом.</p>
-          <div class="direct-contact">
-            <a href="tel:+79028549859">+7 902 854-98-59</a>
-            <span>Максим Максимов · Сургут</span>
-            <div class="messenger-links" aria-label="Мессенджеры">
-              <a class="messenger-link messenger-max" href="https://max.ru/u/f9LHodD0cOL3pQyr5XkDK6MVtNHawLKkdbONwLSyoOXOts-p8-sgm9h1b4g" target="_blank" rel="noopener">MAX</a>
-              <a class="messenger-link messenger-telegram" href="https://t.me/ZatochkaSurgut" target="_blank" rel="noopener">Telegram</a>
-              <a class="messenger-link messenger-whatsapp" href="https://wa.me/79028549859" target="_blank" rel="noopener">WhatsApp</a>
-            </div>
-          </div>
-        </div>
+  <div class="hero-foot shell">
+    <span>ЗАТОЧКА · РЕСТАВРАЦИЯ · РЕМОНТ</span><span>Листайте ниже ↓</span>
+  </div>
+</header>
 
-        <form class="request-form" id="requestForm">
-          <label>Ваше имя<input name="name" type="text" placeholder="Например, Анна" autocomplete="name" /></label>
-          <label>Инструмент<select name="service"><option>Кусачки кутикульные</option><option>Кусачки подологические</option><option>Маникюрные / кутикульные ножницы</option><option>Парикмахерские ножницы</option><option>Грумерские ножницы</option><option>Ножевой блок машинки</option><option>Кухонный нож</option><option>Складной / охотничий нож</option><option>Топор</option><option>Ремонт маникюрного аппарата</option><option>Другое</option></select></label>
-          <label>Комментарий<textarea name="comment" rows="4" placeholder="Количество, состояние инструмента или удобное время"></textarea></label>
-          <div class="submit-actions">
-            <button class="btn btn-max" type="button" id="sendMax">Написать в MAX</button>
-            <button class="btn btn-telegram" type="submit">Отправить в Telegram</button>
-            <button class="btn btn-whatsapp" type="button" id="sendWhatsApp">WhatsApp</button>
-          </div>
-          <p class="form-note" id="formNote">Данные формы нигде не сохраняются. Для MAX текст заявки копируется в буфер обмена.</p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <div class="brand"><span class="brand-mark">◆</span><span><b>АЛМАЗ</b><small>студия заточки</small></span></div>
-      <p>© <span id="year"></span> Студия заточки «Алмаз», Сургут</p>
-      <a href="#top">Наверх ↑</a>
+<main>
+<section class="services" id="services">
+  <div class="light-shell">
+    <div class="section-top">
+      <div><p class="section-index">01 / УСЛУГИ И ЦЕНЫ</p><h2>Что будем точить?</h2></div>
+      <p>Выберите категорию и инструмент.<br>Стоимость и детали — сразу перед вами.</p>
     </div>
-  </footer>
+    <div class="filters" role="tablist">
+      <button class="filter active" data-filter="manicure">✂ <span>Маникюрный</span></button>
+      <button class="filter" data-filter="hair">✂ <span>Парикмахерский</span></button>
+      <button class="filter" data-filter="groom">♙ <span>Грумерский</span></button>
+      <button class="filter" data-filter="knives">◢ <span>Ножи и топоры</span></button>
+      <button class="filter" data-filter="repair">⚙ <span>Ремонт</span></button>
+      <button class="filter" data-filter="all">＋ <span>Все услуги</span></button>
+    </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+    <div class="cards" id="serviceCards">
+      <article class="service-card" data-cat="manicure"><div><small>МАНИКЮР И ПЕДИКЮР</small><h3>Кусачки кутикульные</h3><p>Деликатная заточка режущих кромок и настройка.</p></div><b>450 ₽</b></article>
+      <article class="service-card" data-cat="manicure"><div><small>МАНИКЮР И ПЕДИКЮР</small><h3>Кусачки подологические</h3><p>Для работы с вросшим ногтем.</p></div><b>550 ₽</b></article>
+      <article class="service-card" data-cat="manicure"><div><small>МАНИКЮР И ПЕДИКЮР</small><h3>Ножницы маникюрные</h3><p>Кутикульные и ногтевые ножницы.</p></div><b>350 ₽</b></article>
+      <article class="service-card" data-cat="hair"><div><small>ПАРИКМАХЕРСКИЙ</small><h3>Парикмахерские ножницы</h3><p>Прямые и филировочные.</p></div><b>700 ₽</b></article>
+      <article class="service-card" data-cat="groom"><div><small>ГРУМЕРСКИЙ</small><h3>Грумерские ножницы</h3><p>Прямые, изогнутые и филировочные.</p></div><b>700 ₽</b></article>
+      <article class="service-card" data-cat="hair groom"><div><small>МАШИНКИ</small><h3>Ножевые блоки</h3><p>Парикмахерские и грумерские машинки.</p></div><b>700 ₽</b></article>
+      <article class="service-card" data-cat="knives"><div><small>НОЖИ</small><h3>Кухонные ножи</h3><p>Стоимость зависит от размера и состояния.</p></div><b>от 200 ₽</b></article>
+      <article class="service-card" data-cat="knives"><div><small>НОЖИ</small><h3>Складные / охотничьи</h3><p>Ручная заточка.</p></div><b>700 ₽</b></article>
+      <article class="service-card" data-cat="knives"><div><small>ТОПОРЫ</small><h3>Топоры</h3><p>Восстановление режущей кромки.</p></div><b>700 ₽</b></article>
+      <article class="service-card" data-cat="repair hair groom"><div><small>РЕСТАВРАЦИЯ</small><h3>Реставрация ножниц</h3><p>Парикмахерские и грумерские.</p></div><b>1 500 ₽</b></article>
+      <article class="service-card" data-cat="repair"><div><small>STRONG / MARATHON</small><h3>Подшипники в сборе</h3><p>Замена подшипников.</p></div><b>2 200 ₽</b></article>
+      <article class="service-card" data-cat="repair"><div><small>STRONG / MARATHON</small><h3>Один подшипник / чистка</h3><p>Замена одного подшипника или чистка/разбор.</p></div><b>600 ₽</b></article>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section" id="care">
+  <div class="shell care-grid">
+    <div><p class="kicker"><i></i>02 / ПОСЛЕ ЗАТОЧКИ</p><h2>Острота любит<br><span>заботу.</span></h2><p class="intro">Простые привычки помогают дольше сохранить результат.</p></div>
+    <div class="care-list">
+      <article><b>01</b><div><h3>Маникюрный инструмент</h3><p>Не раскрывайте кусачки до упора, не роняйте и соблюдайте режим обработки.</p></div></article>
+      <article><b>02</b><div><h3>Ножи</h3><p>Не используйте стеклянные доски, не мойте в посудомойке и вытирайте насухо.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="light-shell contact-grid">
+    <div><p class="section-index">03 / ЗАПИСЬ</p><h2>Свяжитесь с мастером</h2><p>MAX и Telegram — основные способы связи. WhatsApp оставлен как дополнительный.</p><a class="phone" href="tel:+79028549859">+7 902 854-98-59</a><p>Максим Максимов · Сургут</p></div>
+    <form id="requestForm" class="request-form">
+      <label>Ваше имя<input name="name" type="text" placeholder="Например, Анна"></label>
+      <label>Инструмент<select name="service"><option>Кусачки кутикульные</option><option>Кусачки подологические</option><option>Маникюрные ножницы</option><option>Парикмахерские ножницы</option><option>Грумерские ножницы</option><option>Ножевой блок машинки</option><option>Кухонный нож</option><option>Складной / охотничий нож</option><option>Топор</option><option>Ремонт маникюрного аппарата</option><option>Другое</option></select></label>
+      <label>Комментарий<textarea name="comment" rows="4" placeholder="Количество, состояние инструмента"></textarea></label>
+      <div class="submit-actions"><button type="button" id="sendMax" class="primary">Написать в MAX</button><button type="submit" class="secondary">Telegram</button><button type="button" id="sendWhatsApp" class="secondary">WhatsApp</button></div>
+      <p id="formNote" class="note">Для MAX текст заявки копируется автоматически.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="shell"><span>АЛМАЗ · СТУДИЯ ЗАТОЧКИ · СУРГУТ</span><span>© <span id="year"></span> Максим Максимов</span></div></footer>
+<script src="script.js"></script>
+</body></html>
