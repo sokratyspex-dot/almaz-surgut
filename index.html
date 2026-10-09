@@ -449,11 +449,11 @@ footer{padding-bottom:88px}
       </select></label>
       <label>Комментарий<textarea class="ym-disable-keys" name="comment" rows="4" placeholder="Количество, состояние инструмента"></textarea></label>
       <div class="submit-actions">
-        <button type="button" id="sendMax" class="primary msg-button"><span class="msg-icon msg-max" aria-hidden="true">MAX</span><span>Написать в MAX</span></button>
+        <button type="button" id="sendMax" class="primary msg-button"><span class="msg-icon msg-max" aria-hidden="true">MAX</span><span>Найти в MAX по номеру</span></button>
         <button type="submit" class="secondary msg-button"><span class="msg-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#229ED9"/><path fill="#fff" d="M18.7 6.2 16.5 17c-.2.8-.7 1-1.4.6l-3.4-2.5-1.6 1.6c-.2.2-.3.3-.7.3l.2-3.5 6.4-5.8c.3-.2-.1-.4-.4-.2l-7.9 5-3.4-1.1c-.7-.2-.8-.7.2-1.1l13.3-5.1c.6-.2 1.2.1.9 1z"/></svg></span><span>Telegram</span></button>
         <button type="button" id="sendWhatsApp" class="secondary msg-button"><span class="msg-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#25D366"/><path fill="#fff" d="M17.5 6.5A7.8 7.8 0 0 0 5.2 15.9L4 20l4.2-1.1a7.8 7.8 0 0 0 9.3-12.4ZM12 18.4c-1.2 0-2.4-.3-3.4-.9l-.2-.1-2.5.7.7-2.4-.2-.2A6.3 6.3 0 1 1 12 18.4Zm3.5-4.7c-.2-.1-1.1-.6-1.3-.6-.2-.1-.3-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1-.2-.1-.8-.3-1.6-.9-.6-.5-1-1.1-1.1-1.3-.1-.2 0-.3.1-.4l.4-.4c.1-.1.2-.2.2-.3.1-.1 0-.3 0-.4-.1-.1-.4-1.1-.6-1.5-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.7.7-.7 1.8s.8 2.1.9 2.3c.1.2 1.7 2.5 4 3.5.6.2 1 .4 1.4.5.6.2 1.1.1 1.5.1.5-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.3-.2-.7-.3Z"/></svg></span><span>WhatsApp</span></button>
       </div>
-      <p id="formNote" class="note">Для MAX текст заявки копируется автоматически.</p>
+      <p id="formNote" class="note">Для связи в MAX найдите мастера по рабочему номеру <strong>+7 902 854-98-59</strong>: Чаты → Поиск → Найти по номеру. Кнопка скопирует номер и откроет MAX.</p>
     </form>
   </div>
 </section>
@@ -496,10 +496,16 @@ document.getElementById('sendWhatsApp').addEventListener('click',()=>{
   window.almazGoal?.('request_whatsapp');
   window.open('https://wa.me/79028549859?text='+encodeURIComponent(textReq()),'_blank','noopener');
 });
-document.getElementById('sendMax').addEventListener('click',async()=>{
+document.getElementById('sendMax').addEventListener('click',()=>{
   window.almazGoal?.('request_max');
-  try{await navigator.clipboard.writeText(textReq());note.textContent='Текст заявки скопирован. Вставьте его в MAX.';}catch(e){}
-  window.open('https://max.ru/u/f9LHodD0cOL3pQyr5XkDK6MVtNHawLKkdbONwLSyoOXOts-p8-sgm9h1b4g','_blank','noopener');
+  const workNumber='+79028549859';
+  note.textContent='В MAX откройте «Чаты» → «Поиск» → «Найти по номеру» и введите +7 902 854-98-59.';
+  if(navigator.clipboard?.writeText){
+    navigator.clipboard.writeText(workNumber).then(()=>{
+      note.textContent='Рабочий номер +7 902 854-98-59 скопирован. В MAX откройте «Чаты» → «Поиск» → «Найти по номеру» и вставьте его.';
+    }).catch(()=>{});
+  }
+  window.open('https://max.ru/','_blank','noopener');
 });
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>
